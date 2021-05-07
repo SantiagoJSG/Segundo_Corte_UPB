@@ -1,0 +1,58 @@
+#Ejercicio 1
+NombreDias = ["Dia Final", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Festivo", "Festivo"] # Se hace la lista
+numero = int(input("Digite el número de la semana para conocer el nombre del día: ")) # Se pide al usuario digitar un numero
+print("El nombre del día número"+ "" + str(numero) + "es: " + str(NombreDias[numero])) # Se da el resultado final
+
+#Ejercicio 2
+#  calc.py##################################################
+def sumar(): #Definimos la función sumar
+    x = a + b
+    print (("Resultado"), (x))
+def restar():#Definimos la función restar
+    x = a - b
+    print (("Resultado"), (x))
+def multiplicar():#Definimos la función multiplicar
+    x = a * b
+    print (("Resultado"), (x))
+def dividir():#Definimos la función dividir
+    x = a / b
+    print (("Resultado"), (x))
+##########################################-2-###################################################
+while True: #
+    try: #Intentamos obtener los datos de entrada
+        a = int(input("Ingresa el primer numero: \n")) #Se digita el primer número
+        b = int(input("Ingresa el segundo numero: \n"))#Se digita el segundo número
+        print (("Que cálculo quieres realizar entre"), (a), ("y"), (b), ("?\n")) #Se pide el cálculo a realizar entre los números ingresados 
+        op = str(input(""" #Ofrecemos las opciones de cálculo que van a llamar a las funciones
+        1- Sumar
+        2- Restar
+        3- Multiplicar
+        4- Dividir \n"""))
+    except: #En caso de error:
+        print ("Error")
+        op = '?'
+##########################################-3-##################################################
+    if op == '1':#Si el usuario elige opción 1 llamamos a sumar
+        sumar()
+        break
+    elif op == '2':#Si el usuario elige opción 2 llamamos a restar
+        restar()
+        break
+    elif op == '3':#Si el usuario elige opción 3 llamamos a multiplicar
+        multiplicar()
+        break
+    elif op == '4':#Si el usuario elige opción 4 llamamos a dividir
+        dividir()
+        break
+    else:
+        print ("""Has ingresado un número de opción erróneo""")#Esto se muestra si el número digitado por el ususario es inválido
+
+#Ejercicio 3
+def impr_tabla (num): #La tabla llega hasta el número 10
+    lim = 10 #Se comienza en 1
+    cont = 1
+    while cont <= lim:
+        resultado = cont * num
+        print("{} x {} = {}".format(num, cont, resultado)) #Se incrementa el contador para evitar el ciclo infinito
+        cont = cont + 1
+impr_tabla(5)
