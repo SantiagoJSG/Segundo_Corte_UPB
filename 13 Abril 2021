@@ -1,0 +1,51 @@
+Ejercicios Max
+# Ejercicio 1
+print(max(2, 3))
+# Ejercicio 2
+print(max(2, 3, 23))
+# Ejercicio 3
+list1 = [1, 2, 4, 5, 54]
+print(max(list1))
+# Ejercicio 4
+list2 = ["a", "b", "c"]
+print(max(list2))
+# Ejercicio 5
+list3 = ["1", "2", "abc", "xyz"]
+print(max(list3))
+# Ejercicio 6
+list4 = [6, 8, 21]
+print(max(list4))
+
+Ejercicios Min
+# Ejercicio 7
+print(min(2, 3))
+# Ejercicio 8
+print(min(2, 3, -1))
+# Ejercicio 9
+list1 = [1, 2, 4, 5, -54]
+print(min(list1))
+# Ejercicio 10
+list2 = ['a', 'b', 'c']
+print(min(list2))
+# Ejercicio 11
+list3 = ["1", "2", "abc", "xyz"]
+print(min(list3))
+# Ejercicio 12
+list4 = [3, 25, -3]
+print(min(list4))
+
+Ejercicios Div y otros
+# Ejercicio 13
+print(divmod(5, 2))
+# Ejercicio 14
+print(divmod(13.5, 2.5))
+# Ejercicio 15
+q, r = divmod(13.5, 2.5)
+print(q)
+print(r)
+# FUNCIÓN OCTAL
+print(oct(30))
+# FUNCIÓN ROUND
+print(round(23.9789658659))
+# FUNCIÓN POW
+print(pow(2, 3))
