@@ -1,0 +1,75 @@
+#Ejercicio 1.1
+A)
+for a in range(9):
+    print(a)
+B)
+for b in range(3, 13):
+    print(b)
+C)
+for c in range(3, 13, 2):
+    print(c)
+D)
+for d in range(11, 4):
+    print(d)
+E)
+for e in range(11, 4, -1):
+    print(e)
+F)
+for f in range(2, 10, 2):
+    print(f)
+G)
+for g in range(2, 10, 3):
+    print(g)
+H)
+for h in range(10, 5, -1):
+    print(h)
+I)
+for i in range(3, -1, -1):
+    print(i)
+
+#Ejercicio 1.2
+for i in range(21):
+    print(i, i ** 3)
+
+#Ejercicio 1.3
+for i in range(10, 0, -1):
+    print(i)
+print("Feliz año nuevo")
+
+#Ejercicio 1.4
+for i in(0, 1, 2, 3, 4):
+    print("Hola")
+
+#Ejercicio 1.5
+for i in range(5):
+  print("Ahora i vale", i, "y su cuadrado", i**2)
+
+#Ejercicio 1.6
+for i in ['JLo', 'Benito', 'Rosalia', 2021]:
+  print("Hola. Ahora i vale", i)
+
+#Ejercicio 1.7
+for n in range(0, 8):
+    print(n)
+
+#Ejercicio 1.8
+for n in range(1, 13):
+    print(n)
+
+#Ejercicio 1.9
+c = 0
+for i in range(1000):
+    ultimo_digito = (i ** 3) % 10
+    if ultimo_digito == 7:
+        c = c + 1
+print(c)
+
+#Ejercicio 2.1
+for s in range (6):
+  for p in range(s):
+    print("s vale", s, "y p vale", p)
+
+#Ejercicio 2.2
+for s in range(5):
+    for p in range(3):
+        print("s vale", s, "y p vale", p)
