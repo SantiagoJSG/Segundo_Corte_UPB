@@ -1,0 +1,52 @@
+# Ejercicio 1
+def primo(num):
+   for i in range(2,num):
+       if num%i==0:
+           return False
+   return True
+def frecuencia(numero,digito):
+   cantidad=0
+   while numero!=0:
+       ultDigito=numero%10
+       if ultDigito==digito:
+           cantidad+=1
+       numero=numero//10
+   return cantidad
+def factorial(numero):
+   f=1
+   if numero!=0:
+       for i in range(1,numero+1):
+           f=f*i
+   return f
+def sumaDigitos(numero):
+  suma=0
+  while numero!=0:
+      digito=numero%10
+      suma=suma+digito
+      numero=numero//10
+  return suma
+mayor=0
+numero=int(input("Digite un número primo, si desea terminar digite un número que no sea primo: "))
+while primo(numero):
+    print("Suma de los dígitos:",sumaDigitos(numero))
+    digito=int(input("Dígito: "))
+    print("El",digito,"aparece",frecuencia(numero,digito),"veces")
+    numero=int(input("Digite un número primo, si desea terminar digite un número que no sea primo: "))
+    if numero > mayor:
+          mayor=numero
+print("Factorial de",mayor,":",factorial(mayor))
+
+# Ejercicio 2
+#programa principal
+x=int(input("Coordenada eje x: "))
+y=int(input("Coordenada eje y: "))
+for i in range(3):
+  x=x+1
+  y=y+1
+print(x," . ",y)
+
+#Ejercicio 3
+b = eval("598 + 705")
+print(b)
+a ="Juan sebastian pasichana".upper()
+print(a)
