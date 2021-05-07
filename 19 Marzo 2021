@@ -1,0 +1,66 @@
+#Ejercicio 1
+for a in range(0, 10):
+    print(a)
+    
+#Ejercicio 2
+for b in range(100, 200):
+    print(b)
+    
+#Ejercicio 3
+for c in range(5, 20, 3):
+    print(c)
+    
+#Ejercicio 4
+num = int(input("Ingrese un numero: "))
+dif = (num * 2)
+for d in range(num, dif):
+    print(d)
+   
+#Ejercicio 5
+c=int(input("Cantidad de números: "))
+total=0
+for variable in range(c):
+   numero=int(input("Número: "))
+   total+=numero
+print("Total de la suma:", total)
+
+#Ejercicio 6
+oracion = input("Oracion: ")
+print("la oracion tiene contiene las vocales: ")
+for e in ("aeiou"):
+    if e in oracion:
+        print(e)
+        
+#Ejercicio 7
+conjunto = 0
+for g in range(0, 101):
+    conjunto = conjunto + g
+print("La sumatoria de los numeros del 0 al 100 es:", conjunto)
+
+#Ejercicio 8
+anio1 = int(input("Ingrese el primer año"))
+anio2 = int(input("Ingrese el segundo año"))
+for anio in range (anio1, anio2 + 1):
+    if anio % 10 == 0:
+        if anio % 4 == 0:
+            if anio % 100 != 0 or anio % 400 == 0:
+                print(anio)
+                
+#Ejercicio 9
+num = int(input("Numero: "))
+i = 1
+if num != 0:
+    for j in range(1, num + 1):
+        q = i * j
+print("Factorial:", i)
+
+#Ejercicio 10
+num1 = 0
+num2 = 1
+print(num1)
+print(num2)
+for k in range(8):
+    num3 = num1 + num2
+    print(num3)
+    num1 = num2
+    num2 = num3
